@@ -1,0 +1,23 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://avinah2.com/pricing/
+sources:
+- https://avinah2.com/pricing/
+name: Avina Clean Hydrogen pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Starter Plan
+  price_text: $50 /Month
+  price: 50
+  description: The perfect plan for small business
+- name: Basic Plan
+  price_text: $70 /Month
+  price: 70
+  description: The perfect plan for larger companies
+- name: Advanced Plan
+  price_text: $90 /Month
+  price: 90
+  description: The perfect plan for bigger enterprises
+docs: https://avinah2.com/pricing/

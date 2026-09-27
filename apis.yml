@@ -1,23 +1,74 @@
 aid: avina-clean-hydrogen
+
 name: Avina Clean Hydrogen
-description: 'Avina Clean Hydrogen is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: Avina Clean Hydrogen, part of Avina Inc., develops and delivers cutting‑edge clean energy solutions, focusing on low‑carbon ammonia,
+  synthetic aviation fuel, and especially clean hydrogen produced via renewable electrolysis. The company aims to accelerate the global transition
+  to clean fuels for heavy transport, shipping, steel and chemicals, with commercial plants slated for operation from 2025. Avina’s mission is
+  to provide affordable, reliable clean energy, scaling next‑generation fuels worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/avina-clean-hydrogen/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Clean Energy
+- Hydrogen
+- Synthetic Fuels
+- Renewable
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/avina-clean-hydrogen-plans-pricing.yml
+- type: Hosts
+  url: hosts/avina-clean-hydrogen-hosts.yml
+- type: Vendors
+  url: vendors/avina-clean-hydrogen-vendors.yml
+- type: Pricing
+  url: https://avinah2.com/pricing/
+- type: Newsroom
+  url: https://avinah2.com/news/
+- type: DomainSecurity
+  url: security/avina-clean-hydrogen-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/avina-clean-hydrogen_stock/
+  url: https://avinah2.com/
+
+apis:
+- name: Avina Clean Hydrogen API
+  description: API information is referenced on the pricing page of Avina Clean Hydrogen website.
+  humanURL: https://avinah2.com/pricing/
+  baseURL: null
+  aid: avina-clean-hydrogen:avina-clean-hydrogen-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found at the API host.
+  evidence:
+  - url: https://api.avinah2.com/openapi.json
+    status: 0
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
