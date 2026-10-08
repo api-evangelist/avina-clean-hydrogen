@@ -21,3 +21,28 @@ plans:
   price: 90
   description: The perfect plan for bigger enterprises
 docs: https://avinah2.com/pricing/
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Starter Plan
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Basic Plan
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Advanced Plan
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
